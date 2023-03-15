@@ -81,4 +81,8 @@ void organizeMatrixBack (float* matrix, unsigned int M, unsigned int K, unsigned
 
 unsigned int* calculateOrdering (float* matrix, unsigned int M, unsigned int K, GENERATION_TYPE gen_type, int num_ms);
 
+// Support SuiteSparse Matrix Collection
+// rows, cols, and sparsity (the integer before the percentage) need to return
+float* generateDenseMatrixFromFile(std::string file, unsigned int& rows, unsigned int& cols, unsigned int& sparsity, GENERATION_TYPE gen_type);
+
 #endif //UTILITY_H
